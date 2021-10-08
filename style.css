@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   border: none;
+    border: none;
 }
 body{
     background: rgb(255, 255, 255);
@@ -34,6 +34,7 @@ font-family: 'Poppins', sans-serif;
     padding: 20px;
     transform-origin: left;  
     border: none;
+    transition: color 0.2s;
 }
 .active 
 {
@@ -82,4 +83,16 @@ font-family: 'Poppins', sans-serif;
 {
     width: 85%;
     float: right;
+}
+li.list:not(.active):hover {
+    color: rgb(255, 87, 25);
+}
+
+@media screen and (max-width: 1250px) {
+    .sidemenu {
+        width: 125px !important;
+    }
+    .container {
+        width: calc(100% - 155px);
+    }
 }
