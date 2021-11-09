@@ -114,7 +114,6 @@ transition: all .5s ease-in-out;
     width: 85%;
     float: right;
 }
-<<<<<<< HEAD
 .list
 {
     display: flex;
@@ -123,9 +122,6 @@ transition: all .5s ease-in-out;
 .list i
 {
     margin: 0 20px 0 0;
-=======
-li.list:not(.active):hover {
-    color: rgb(255, 87, 25);
 }
 
 @media screen and (max-width: 1250px) {
