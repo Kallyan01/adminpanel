@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   border: none;
+    border: none;
 }
 body{
     background: rgb(255, 255, 255);
@@ -48,6 +48,7 @@ transition: all .5s ease-in-out;
     padding: 20px;
     transform-origin: left;  
     border: none;
+    transition: color 0.2s;
 }
 .active 
 {
@@ -113,6 +114,7 @@ transition: all .5s ease-in-out;
     width: 85%;
     float: right;
 }
+<<<<<<< HEAD
 .list
 {
     display: flex;
@@ -121,4 +123,17 @@ transition: all .5s ease-in-out;
 .list i
 {
     margin: 0 20px 0 0;
+=======
+li.list:not(.active):hover {
+    color: rgb(255, 87, 25);
+}
+
+@media screen and (max-width: 1250px) {
+    .sidemenu {
+        width: 125px !important;
+    }
+    .container {
+        width: calc(100% - 155px);
+    }
+>>>>>>> 2a324cfd0dea86aaa0ca937dec3243b6a2719feb
 }
