@@ -13,3 +13,18 @@ Array.from(list).forEach((element) => {
         element.classList.add('active');
     })
 });
+
+let sidemenu = document.getElementById('smenu')
+let menuBtn = document.getElementById('bMenu')
+
+menuBtn.addEventListener('click',()=>{
+    console.log("clicked")
+    if(sidemenu.classList.contains('sactive'))
+    {
+        sidemenu.classList.remove('sactive')
+    }
+    else
+    {
+        sidemenu.classList.add('sactive')
+    }
+})

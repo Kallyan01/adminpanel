@@ -9,14 +9,28 @@
 body{
     background: rgb(255, 255, 255);
 }
+.navbar
+{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:flex-start;
+    z-index: 10;
+    align-items: center;
+}
 .sidemenu
 {
 height: 100vh;
 position: fixed;
 top: 0;
-width: 10%;
+width: 4%;
 background-color:rgb(0, 0, 0);
 font-family: 'Poppins', sans-serif;
+transition: all .5s ease-in-out; 
 }
 .menulist
 {
@@ -43,6 +57,11 @@ font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
     
+}
+.sactive
+{
+    width: 10%; 
+    transition: all .5s ease-in-out; 
 }
 .sidemenu .active::after
 {
@@ -74,12 +93,32 @@ font-family: 'Poppins', sans-serif;
 .icon
 {
     color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     margin: 10px;
+}
+.icon i
+{
+    margin: 0 15px;
+    cursor: pointer;
 }
 .container
 {
     width: 85%;
     float: right;
+}
+.list
+{
+    display: flex;
+    align-items: center;
+}
+.list i
+{
+    margin: 0 20px 0 0;
 }
